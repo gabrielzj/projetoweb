@@ -4,7 +4,63 @@
     box-sizing: border-box;
 }
 
-header{
-    margin: 0;
-    padding: 0;
+div{
+    display: block;
 }
+
+body{
+    font-family: 'Work Sans', sans-serif;
+}
+.img{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    background-image: url("https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/venturus-1562081429-imagem-galaxy-escurajpg.jpg");
+}
+
+.section-featured .principal {
+    background: rgba(0, 0, 0, 0.5);
+    display: table;/* display: flex; */
+    width: 100%;
+    padding: 50px 0px 50px 0px;
+    min-height: 600px;
+}
+
+.section-featured .principal .secundaria{
+    width: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.container{
+    max-width: 970px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.section-featured .principal .secundaria .container-menor{
+    text-align: center;
+    font-size: 18px;
+}
+
+.section-featured .principal .secundaria .container-menor h2 {
+    font-size: 60px;
+    margin-bottom: 25px;
+    margin-top: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
