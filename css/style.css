@@ -2,6 +2,8 @@
 
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 div{
@@ -11,56 +13,130 @@ div{
 body{
     font-family: 'Work Sans', sans-serif;
 }
-.img{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    min-height: 600px;
-    background-image: url("https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/venturus-1562081429-imagem-galaxy-escurajpg.jpg");
-}
 
-.section-featured .principal {
-    background: rgba(0, 0, 0, 0.5);
-    display: table;/* display: flex; */
-    width: 100%;
-    padding: 50px 0px 50px 0px;
-    min-height: 600px;
-}
-
-.section-featured .principal .secundaria{
-    width: 100%;
-    display: table-cell;
-    vertical-align: middle;
-}
-
-.container{
-    max-width: 970px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-.section-featured .principal .secundaria .container-menor{
-    text-align: center;
-    font-size: 18px;
-}
-
-.section-featured .principal .secundaria .container-menor h2 {
+h2 {
+    font-family: "Work Sans", sans-serif;
+    font-weight: 500;
+    line-height: 1.1;
+    color: white;
     font-size: 60px;
     margin-bottom: 25px;
     margin-top: 20px;
+    text-align: center;
 }
 
+a {
+    text-decoration: none;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    background-image: url("https://s3-sa-east-1.amazonaws.com/prod-jobsite-files.kenoby.com/uploads/venturus-1562081429-imagem-galaxy-escurajpg.jpg");
+    min-height: 600px;
+}
+
+.darker {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.content{
+    width: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    z-index: 999999;
+}
+
+.buttons-mobile {
+    display: none;
+}
+
+.btn{
+    border-radius: 100px;  /*arredonda as bordas */
+    padding: 15px 25px 15px 25px;
+    border-width: 2px;
+    font-size: 16px;
+    display:inline-block;
+    font-weight: 400px;
+    text-align:center;
+    border: 1px solid transparent;
+}
+
+.btn-video{
+    background-color: transparent;
+    color: white;
+    border-color: white;
+    border-width: 2px;
+}
+
+.btn-about{
+    background-color: white;
+    color: rgb(237, 27, 102);
+    border-color: white;
+    border-width: 2px;
+}
+
+.btn-vacancy{
+    background-color: rgb(237, 27, 102);
+    color: white;
+    border-color: rgb(237, 27, 102);
+    border-width: 2px;
+}
+
+.btn-video:hover{
+    background-color: white;
+    color: rgb(74, 74, 74);
+    transition-duration: 0.3s;
+    border-width: 2px;
+}
+
+.btn2:hover{
+    background-color: transparent;
+    transition-duration: 0.3s;
+    border-width: 2px;
+}
+
+@media (max-width: 768px) {
 
 
+    .container{
+        min-height: 350px;
+        flex-direction: column;
+    }
+    h2 {
+        font-size: 20px;
+    }
 
+    .buttons {
+        display: flex;
+    }
 
+    .buttons-mobile {
+        display: block;
+        margin-bottom: 20px;
+    }
 
+    .hide-mobile {
+        display: none !important;
+    }
+    
+    .btn2{
+        font-size: 14px;
+        padding: 10px 15px 10px 15px;
+        margin: 10px 20px;
+    }
+    .btn1{
+        font-size: 14px;
+        padding: 10px 15px 10px 15px;
+    }
 
-
-
-
-
-
-
+}
