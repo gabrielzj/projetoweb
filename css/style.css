@@ -10,6 +10,34 @@ div{
     display: block;
 }
 
+nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+li{
+    padding: 19px 17px 19px 17px;
+    color: #777;
+}
+
+ul .cd{
+    color: #1E7AE3;
+    margin-right: 30px;
+}
+
+ul .cd img{
+    color: #1E7AE3;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
 body{
     font-family: 'Work Sans', sans-serif;
 }
@@ -29,6 +57,28 @@ a {
     text-decoration: none;
 }
 
+.social-media{
+    position: fixed;
+    top: 40%;
+    left: 0;
+    background-color: white;
+    z-index: 1;
+    border-radius: 0px 2px 2px 0px;
+    box-shadow: rgba(0, 0, 0, 0.1);
+    font-size: 14px;
+}
+
+.social-media ul li {
+    display: block;
+    padding: 12px 12px 8px 16px;
+    border-bottom: 1px solid #d4d4d4 ;
+}
+
+.social-media li svg{
+    fill: rgb(51, 122, 183);
+}
+
+
 .container{
     position: relative;
     display: flex;
@@ -45,7 +95,7 @@ a {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.5);
-    z-index: -1;
+    z-index: 0;
 }
 
 .content{
@@ -60,6 +110,19 @@ a {
     display: none;
 }
 
+.img-logo img{
+    width: 150px;
+    padding: 10px;
+    margin-left: 15px;
+
+}
+
+.btn-menu:hover{
+    color: #1E7AE3;
+    background-color: lightgray;
+    transition-duration: 1s;
+}
+
 .btn{
     border-radius: 100px;  /*arredonda as bordas */
     padding: 15px 25px 15px 25px;
@@ -69,6 +132,7 @@ a {
     font-weight: 400px;
     text-align:center;
     border: 1px solid transparent;
+    margin: 10px;
 }
 
 .btn-video{
