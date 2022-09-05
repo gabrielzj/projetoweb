@@ -110,6 +110,22 @@ a {
     display: none;
 }
 
+header .mobile {
+    display: none;
+}
+
+header .img-logo-mb{
+    display: none;
+}
+
+header .mobile ul{
+    display: none;
+}
+
+.mobile .hamb .hamburguer{
+    display: none;
+}
+
 .img-logo img{
     width: 150px;
     padding: 10px;
@@ -132,7 +148,7 @@ a {
     font-weight: 400px;
     text-align:center;
     border: 1px solid transparent;
-    margin: 10px;
+    margin: 5px;
 }
 
 .btn-video{
@@ -140,6 +156,12 @@ a {
     color: white;
     border-color: white;
     border-width: 2px;
+}
+
+.buttons .play{
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 5px
 }
 
 .btn-about{
@@ -169,15 +191,18 @@ a {
     border-width: 2px;
 }
 
-@media (max-width: 768px) {
-
+@media (max-width: 600px) {
 
     .container{
         min-height: 350px;
         flex-direction: column;
     }
     h2 {
-        font-size: 20px;
+        font-size: 18px;
+    }
+
+    .container .titulo{
+        margin-right: 38px;
     }
 
     .buttons {
@@ -201,6 +226,32 @@ a {
     .btn1{
         font-size: 14px;
         padding: 10px 15px 10px 15px;
+    }
+
+    .mobile{
+        width: auto;
+        min-height: 350px;
+    }
+
+    nav {
+        display: flex;
+    }
+
+    .img-logo{
+        justify-content: center;
+        align-items: center;
+    } 
+    
+    header nav .btn-menu{
+        display: none;
+    }
+
+    header nav .cd {
+        display: none;
+    }
+
+    .social-media {
+        display: none;
     }
 
 }
