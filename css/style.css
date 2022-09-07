@@ -169,8 +169,15 @@ a {
     border-width: 2px;
 }
 
-@media (max-width: 768px) {
+header nav .ham-box{
+    display: none;
+}
 
+header nav .txt{
+    display: none;
+}
+
+@media (max-width: 768px) {
 
     .container{
         min-height: 350px;
@@ -203,4 +210,45 @@ a {
         padding: 10px 15px 10px 15px;
     }
 
+    header nav ul{
+        display: none;
+    }
+
+    .social-media{
+        display: none;
+    }
+
+    .img-logo{
+        width: auto;
+        height: auto;
+    }
+
+    header nav .txt{
+        display: flex;
+        align-items: center;
+    }
+
+    header nav a{
+        color: #337ab7;
+        font-family: 'Work Sans', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        line-height: 20px;
+        margin-right: 10px;
+    }
+
+    header nav .ham-box{
+        display: flex;
+        align-items: center;
+    }
+
+    header .ham-box .ham{
+        margin-left: 10px;
+    }
+
+
+
+
+
+    
 }
