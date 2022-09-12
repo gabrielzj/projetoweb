@@ -57,6 +57,32 @@ a {
     text-decoration: none;
 }
 
+/* .content .buttons .play{
+    margin-right: 5px;
+    font-size: 16px;
+} */
+
+.assist{
+    background-color: rgb(0, 48, 135);
+    width: fit-content;
+    z-index: 1;
+    border-width: 1px; 
+    position: fixed;
+    right: 0;
+    top: 30%;
+    border-radius: 12px 0px 0px 12px;
+    border-color: white;
+}
+
+.assist svg{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.assist svg g path {
+    fill: white;
+}
+
 .social-media{
     position: fixed;
     top: 40%;
@@ -77,7 +103,6 @@ a {
 .social-media li svg{
     fill: rgb(51, 122, 183);
 }
-
 
 .container{
     position: relative;
@@ -146,9 +171,27 @@ header .mobile ul{
     font-size: 16px;
     display:inline-block;
     font-weight: 400px;
-    text-align:center;
+    text-align: center;
     border: 1px solid transparent;
-    margin: 5px;
+    margin: 30px 15px 30px 15px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+}
+
+.yt {
+    display: flex;
+}
+
+.text {
+    flex-direction: column;
+    margin-top: 6px;
+    text-align: center;
 }
 
 .btn-video{
@@ -156,19 +199,15 @@ header .mobile ul{
     color: white;
     border-color: white;
     border-width: 2px;
-}
-
-.buttons .play{
-    display: inline-block;
-    margin-right: 10px;
-    margin-top: 5px
+    padding: 10px 25px 10px 25px;
+      
 }
 
 .btn-about{
     background-color: white;
     color: rgb(237, 27, 102);
     border-color: white;
-    border-width: 2px;
+    border-width: 2px; 
 }
 
 .btn-vacancy{
@@ -242,6 +281,11 @@ header nav .txt{
 
     .social-media{
         display: none;
+    }
+
+    section .assist{
+        margin-right: 0;
+        top:70%
     }
 
     .img-logo{
