@@ -10,12 +10,12 @@ const containerForm = document.querySelector('#container-form')
 //     containerForm.style.display = 'flex';
 // });
 div.addEventListener('click', function () {
-    if (containerForm.className == 'test-none' && d.className == 'darker') {
+    if (containerForm.className == 'test-none') {
         containerForm.className = 'test'
-        d.className = 'darker-none'
+        // d.className = 'darker-none'
     } else {
         containerForm.className = 'test-none'
-        d.className = 'darker'
+        // d.className = 'darker'
     }
 });
 
@@ -45,35 +45,38 @@ submitButton.addEventListener('click', (event) => {
     .then(data => {
         console.log(data)
         // candidate.className = "person-none"
-        if(data.token != ''){
+        if(data.token){
             candidate.textContent = "Olá, bem-vindo"
         }
         containerForm.style.display = "none"
-        search.style.display = 'none'
+        // search.style.display = 'none'
+        search.className = 'part2'
+
+        const mensagem = document.querySelector('.msg')
     }) 
 })
 
 const searchButton = document.querySelector('#searchBtn')
 
-// searchButton.addEventListener('click', () =>{
-//     async function loadPost() {
-//         const response = await fetch('https://jsonplaceholder.typicode.com/posts')
+searchButton.addEventListener('click', () =>{
+    async function loadPost() {
+        const response = await fetch('https://jsonplaceholder.typicode.com/posts')
 
-//         const json = await response.json()
-//         const post = json.slice(0, 10)
+        const json = await response.json()
+        const post = json.slice(0, 10)
     
-//         post.forEach(post => {
-//             let div = document.createElement('#postContainer')
-//             div.classList.add('card-item')
-//             div.innerHTML = `
-//             <h3>${post.title}</h3>
-//             <p>${post.body}</p>
-//           `
-//           postscontainer.appendChild(div)
-//         });
-//     }
-//     loadPost('https://jsonplaceholder.typicode.com/posts')    
-// })
+        post.forEach(post => {
+            let div = document.createElement('#postContainer')
+            div.classList.add('card-item')
+            div.innerHTML = `
+            <h3>${post.title}</h3>
+            <p>${post.body}</p>
+          `
+          postscontainer.appendChild(div)
+        });
+    }
+    loadPost('https://jsonplaceholder.typicode.com/posts')    
+})
 
 async function getPost() {
 
@@ -85,6 +88,7 @@ async function getPost() {
 }
 
 localStorage.setItem('email', 'eve.holt@reqres.in')
+
 
 
 

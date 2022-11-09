@@ -115,13 +115,13 @@ a {
     min-height: 600px;
 }
 
-.darker-none{
+/* .darker-none{
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
     z-index: 0;
-}
+} */
 
 .content{
     width: 85%;
@@ -372,13 +372,16 @@ input{
     margin-left: 5px;
 }
 
-#pt2{
+.part2{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center;
-    border-bottom: purple;
+}
+
+.part2-none{
+    display: none;
 }
 
 .pesquisa{
@@ -396,6 +399,21 @@ input{
 .pesquisa button{
     padding: 2px;
     margin-left: 10px;
+}
+
+.msg {
+    font-size: 12px;
+    color: red;
+    font-weight: 500;
+    
+}
+
+.msg-none{
+    display: none;
+}
+
+.login input:hover{
+    border-color: black;
 }
 
 
