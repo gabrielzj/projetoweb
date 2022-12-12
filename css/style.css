@@ -29,7 +29,7 @@ li{
 
 ul .cd{
     color: #1E7AE3;
-    margin-right: 30px;
+    /* margin-right: 30px; */
 }
 
 ul .cd img{
@@ -416,6 +416,19 @@ input{
     border-color: black;
 }
 
+.registration{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.registration .icon{
+    margin-right:5px;
+    margin-top: 5px;
+    
+}
 
 @media (max-width: 768px) {
 
