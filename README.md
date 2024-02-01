@@ -1,2 +1,2 @@
 # projetoweb
-Projeto desenvolvido na disciplina de Programação Web
+Página desenvolvida na disciplina de Programação Web
